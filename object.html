@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var emp = {
+            id: 101,
+            name: "Sumedha",
+            post: "Android Developer",
+            salary: 760000,
+            single: true,
+            details: function(){
+                return `Id: ${this.id} Name: ${this.name} Post: ${this.post} Salary: ${this.salary} Single: ${this.single}`
+            }
+        }
+        console.log(emp);
+        console.log(emp.details());
+
+        // array of object
+
+        var emp1 = [
+            {id: 101, name: "Sums", post:"Android Developer", salary: 250000, gender: "female", address: "Ambajogai, Beed"},
+            {id: 102, name: "Pooja", post:"React Developer", salary: 200000, gender: "female", address: "Ambajogai, Beed"},
+            {id: 103, name: "Alisha", post:"Angular Developer", salary: 25000, gender: "female", address: "satara"},
+            {id: 104, name: "Swapnil", post:"Java Developer", salary: 150000, gender: "male", address: "Solapur"},
+            {id: 105, name: "Ganesh", post:"Mendix Developer", salary: 250000, gender: "female", address: "Pune"}
+        ]
+
+        for (var i=0; i<emp1.length; i++)
+        {
+            document.write(`Id: ${emp1[i].id} Name: ${emp1[i].name} Post: ${emp1[i].post} Salary: ${emp1[i].salary} Gender: ${emp1[i].gender}, Address: ${emp1[i].address} <br><br>`);
+        }
+    </script>
+</body>
+</html>

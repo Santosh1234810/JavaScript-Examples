@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var students = ["Anmol","Vishal","Rohit","Raj","Chetan"];
+        console.log(students);
+        console.log(students[2]);
+        students[1] = "Sumedha";
+        console.log(students);
+
+        // how to find array length
+        console.log("array length: "+students.length);
+
+        // how to find array size
+        console.log("array size: ",students.length-1);
+
+        // arrays methods
+        // 1. push(): it add values at last index of an array
+        students.push("Pooja");
+        console.log(students);
+
+        // 2. pop(): it removes last index of an array
+        students.pop();
+        console.log(students);
+
+        // 3. unshift(): it adds values at first index of an array
+        students.unshift("Dhoni");
+        console.log(students);
+
+        // 4. shift(): it removes value from first index of an array
+        students.shift();
+        console.log(students);
+
+        // 5. splice(start-index, delete-count, insert-data): it add and remove values from middle of an array.
+        
+        students.splice(3,0,"Ajay","Pooja","Shlok"); //it will add value at third index of an array
+        console.log(students);
+
+        students.splice(4,2); //it will remove two values from fourth index of an array, here 4 is index and 2 is number of value
+        console.log(students);
+
+        students.splice(2,2,"Shweta","Sumedha","Pooja"); //it will remove two values from second index of an array as well as it will add three value from second index.
+        console.log(students);
+
+        //6. toString(): it convert array data into toString
+        console.log(students.toString());
+
+        //7. join(separator): it converts array data into string, but here we can add one separator.
+        console.log(students.join("-"));
+
+        // 8. slice(start-index,end-index): it returns partial data of an array
+        console.log(students.slice(3));
+        console.log(students.slice(3,5));
+
+        var city = ["Pune","Mumbai","Beed","Parbhani","Solapur","Satara","Nagpur"];
+        console.log(city);
+
+        for (let i=0; i<city.length; i++)
+        {
+            console.log(city[i]);
+            if (city[i] == "Pune" || city[i] == "Nagpur")
+            {
+                console.log("Cities are available")
+            }
+            
+        }
+
+        for (let cities of city)
+        {
+            document.write(cities,",")
+        }
+    </script>
+</body>
+</html>

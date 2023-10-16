@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong id="d1"></strong>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    <div id="d20"></div>
+
+    <script>
+        var msg = "Welcome you are Symbiosis Pune, Simbiosis Pune will make your future bright."
+
+        document.getElementById("d1").innerHTML = msg;
+        document.getElementById("d2").innerHTML = msg.length;
+        document.getElementById("d3").innerHTML = msg.toUpperCase();
+        document.getElementById("d4").innerHTML = msg.toLowerCase();
+
+        // 1. indexOf
+        document.getElementById("d5").innerHTML = msg.indexOf("Symbiosis");
+        document.getElementById("d6").innerHTML = msg.indexOf("Symbiosis",19);
+
+        // 2. lastindexOf
+        document.getElementById("d7").innerHTML = msg.lastIndexOf("Pune",27);
+
+        // 3. search()
+        document.getElementById("d8").innerHTML = msg.search(62);
+
+        // 4. slice():
+        document.getElementById("d9").innerHTML = msg.slice(10,66);
+        document.getElementById("d10").innerHTML = msg.slice(-20,-1);
+
+        // 5. subString()
+        document.getElementById("d11").innerHTML = msg.slice(20,40);
+
+        // 6. subStr():
+        document.getElementById("d12").innerHTML = msg.substr(5,10);
+
+        var fname = "Panchshil ", lname="Wankhede";
+        document.getElementById("d13").innerHTML = fname.concat(lname," FullStack Developer");
+
+        //7. replace("Old-string","new-string")
+        document.getElementById("d14").innerHTML = msg.replace("Symbiosis","IIT");
+        document.getElementById("d15").innerHTML = msg.replaceAll("Symbiosis","IIT");
+        document.getElementById("d16").innerHTML = msg.replace(/symbiosis/i,"IIT");
+        document.getElementById("d17").innerHTML = msg.replace(/symbiosis/ig,"IIT");
+
+        // 8. charAt(index): it returns single character available on index.
+        document.getElementById("d18").innerHTML = msg.charAt(0);
+
+        // 9. CharCodeAt(index): it returns Ascii value:
+        document.getElementById("d19").innerHTML = msg.charCodeAt(0);
+
+    </script>
+</body>
+</html>

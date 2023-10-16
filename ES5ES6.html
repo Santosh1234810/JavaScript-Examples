@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var msg = "        Hello       <br>";
+        document.getElementById("d1").innerHTML = msg;
+        document.write(msg);
+        document.write(msg.trim());
+
+        var num = [1,3,5,6,8,10,2,4,6,11,22,33,44,55];
+        // 1. forEach(): it call another method once for each array element
+        num.forEach((val)=>{
+            document.write(val,",");
+        })
+    </script>
+</body>
+</html>

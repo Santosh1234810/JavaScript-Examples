@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        // 1. normal function
+        function greeting(){
+            return "Welcome";
+        }
+        document.getElementById("d1").innerHTML = greeting();
+
+        // 2. parameterized function
+        function welcome(name1,name2,name3){
+            return "Welcome "+name1+name2+name3;
+        }
+        console.log(welcome("Sandip ","Akshay ","Sanvi "));
+
+        // 3. Anonymous function: function with no name is called anonymous function.
+        var mul = function(n1,n2){
+            return n1*n2;
+        }
+        console.log(mul(10,5));
+
+        // 4. Arrow function: function with no name and function keyword.
+       var div = (n1,n2)=>{
+            return n1/n2;
+        }
+        console.log(div(100,10));
+
+        // 5. Optional parameterized function: in this passing value to parameter is not mandatory.
+        var fullName = (fname,lname,mname="")=>{
+            return fname + mname + lname;
+        }
+        console.log(fullName("Santosh ","Vairale"))
+
+        // 6. rest parameterized function: when we don't know how many paramters are required.
+        var stds = (...std)=>{
+            return std;
+        }
+        console.log("Rahul","Rohit","Virat","kohli")
+
+        // for loop
+        var students = ["Akshay","Aman","Aniket","Rahul"]
+    </script>
+</body>
+</html>

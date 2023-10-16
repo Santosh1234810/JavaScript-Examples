@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #d7{
+            background-color: aqua;
+            width: 80px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 10px;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+        }
+        #d7:hover{
+            background-color: palevioletred;
+            box-shadow: 15px 10px 7px rgb(209, 13, 13);
+            color: rgb(77, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <script>
+        var d = new Date();
+        document.getElementById("d1").innerHTML = d;
+        document.getElementById("d2").innerHTML = `Current Year: ${d.getFullYear()}`;
+        document.getElementById("d3").innerHTML = `Current Data: ${d.getDate()}`;
+        document.getElementById("d4").innerHTML = `Current Month: ${d.getMonth()}`;
+        document.getElementById("d5").innerHTML = `Current Day: ${d.getMonth()}`;
+        document.getElementById("d6").innerHTML = `Hours: ${d.getHours()}`;
+
+        function myClock(){
+            var d = new Date();
+            document.getElementById("d7").innerHTML = d.toLocaleTimeString();
+        }
+        setInterval(myClock,1000);
+    </script>
+</body>
+</html>

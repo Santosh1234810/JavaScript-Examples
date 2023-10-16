@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external js -->
+    <script src="./validation.js"></script>
+    <title>Document</title>
+
+    <style>
+        .box{
+            background-color: deepskyblue;
+            width: 450px;
+            height: 300px;
+            border: 2px solid;
+            box-shadow: 10px 15px 7px black;
+            text-align: center;
+            padding: 10px;
+            display: block;
+            border-radius: 10px;
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+    <form action="" name="myform" onsubmit="return checkData()">
+            <label for="">Enter User Name</label>
+            <input type="text" name="name" id="uname" placeholder="Enter the name" class="myinput"><br><br>
+            <span id="nameErr" style="color: red;"></span>
+
+            <div>
+                <label for="">Select your Qualification</label>
+                <input type="checkbox" name="edu" value="ssc">SSC
+                <input type="checkbox" name="edu" value="hsc">HSC
+                <input type="checkbox" name="edu" value="ug">UG
+                <input type="checkbox" name="edu" value="pg">PG
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+</html>

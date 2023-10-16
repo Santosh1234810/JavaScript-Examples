@@ -1,0 +1,132 @@
+28/3/23
+JavaScript: it is used to add functionality into webpage or webapp.
+           -it is used to make website or webapp dynamic.
+           -it is interpreted language.
+           -it is loosely type language.
+
+*Why js is called as loosely typed language?
+when we create a variable in JavaScript at that time cannot determine what type of data it contains until and unless we store value or data in it.
+
+*there are two ways to use js:
+1. internal js.: in html file we use script tag and in that  we write js code.
+2. external js.: in this we create a separate js file and import in html file in head section.
+
+-JavaScript is a object base language.
+-in JavaScript window is a global object.
+
+*How to get output in JavaScript?
+-there are four ways to get output in JavaScript:
+1. document.write(): it is print output on webpage at the bottom of webpage.
+2. window.alert(): it is display output at popup window
+3. console.log(): it will display the output in browser console.
+4. DOM(Document Objet Model): 
+
+*variable
+-it is used to store data in it.
+-in js we can create variable by using var, let and const keyword.
+ 
+ var: it is used to create functional scope variable.
+ let: it is used to create block scope variable.
+ const: it is used to constant variable, we have initialize it when create it. it's value never going to be change.
+
+ *Data Types in JavaScript:
+ 1. number: 120, 0.5, 35654
+ 2. string: " " or ' '
+ 3. boolean: true or false
+ 4. undefined: no value
+ 5. null: variable with empty data.
+
+ 6. array: it stores multiple value of same data type.
+           -in array data stored on index basis.
+           -array index always starts from zero index.
+           -we can array data outside by writing arrayName[indexNumber]
+           -array denoted by []
+
+ 7. object: it stores multiple value with different data type.
+            -in object data stores in key and value pairs.
+            -we can access object data outside by writing object, keyName.
+            -object denoted by {}
+
+*Operators 
+1. Arithmetic: +,-,*,/;
+/: it returns quotient.
+%: it returns remainder.
+**: it returns power of any number.
+
+2. Relational Operators
+<,>,<=,>=,!=
+
+*in JavaScript + Operator is used for two purposes.
+1. to perform addition
+2. to perform concatenation.
+
+*comparison Operator
+== : it check only value and if both are same then it return true value.
+=== : it check both value as well as its data type if both are same then it return true value.
+
+*FUnctions and Advanced function is JavaScript
+-function is a block of code which is used to perform specific task.
+and function will get execute when we called it.
+-it is used to re-use code.
+1. normal function:
+=============================================================================
+29/3/23
+
+array:
+-it stores multiple value of same data type.
+-
+
+
+*Object:- it stores multiple values with same data type;
+        - in object data store in 
+
+*Array of object
+*How to insert date in website using js.
+-if we want to get date in js for that we have crate object of date class.
+-date class object return date from browser.
+
+======================================================================================
+30/3/23
+*string and its methods.
+*stringOf:- it is collection of characters.
+        - it is also datatype in js.
+        -in string every character has number and it starts from zero.
+
+*String methods to find out its index:
+1.index(): it start search of index from left to right.
+            -it takes two parameteres. i.seaechig string ii.start-indexNumber.
+            -if searching is not not found then it return -1 as result.
+
+2.lastindexOf(): it returns index or first occurences of strting.
+
+3.search(): it returns index or first occurences of string.
+            -it starts seraching of index from  left to right.
+            -it takes two parameteres 1.searching string 
+            -if searching is not found then it returns -1 as a result.
+            -it is faster than indexOf()
+
+*String methods to find partial part of string from index.
+
+*4. slice(start-index,end-index): it returns partial part of string from given index number.
+           -it takes two parameteres 1.start-index, 2.end-index.
+           -if pass +ve value then it will search from left to right.
+           -if pass -ve value then it will serch from right to left.
+
+*5. subString(start-index,end-index): it returns partial part of string from given index number.
+
+6* subStr(start-index, end-index): it return partial part string from given index number.
+-it takes two parameter 1.start-index, 2.number character.
+-if pass +ve 
+
+*ES5(2009) and ES(6)
+1.trim(): it is used to remove unwanted white spaces from both sides of the string.
+
+===================================================================================
+31/3/23
+what is callback method:
+-passing one method as a parameter to another function is called callback function.
+
+*ES5(2009) and ES(6)
+
+
+
